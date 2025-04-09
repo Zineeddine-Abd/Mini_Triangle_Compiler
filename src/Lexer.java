@@ -11,10 +11,10 @@ public class Lexer {
             "begin", "const", "do", "else", "end", "if", "in",
             "let", "while", "then", "var", "function", "return"
     };
-    private static final Set<String> keywords = new HashSet<>(Arrays.asList(keywordsArray));
+    private static final Set<String> keywords = new HashSet<>(Arrays.asList(keywordsArray)); //Table des mots clés
 
     private BufferedReader reader;
-    private int currentChar;  //because read returns the ASCII code
+    private int currentChar;  //int because read returns the ASCII code
     private StringBuilder tokenValue; //to trace order of tokens
 
     public Lexer(String filename) throws IOException {
